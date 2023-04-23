@@ -1,0 +1,98 @@
+Version 1.0.5 October 2nd, 2021
+
+## MISC
+* Changed User-Agent to wget/1.20. Fixed an error where it finds no results. Thanks @mathieu-aubin
+
+Version 1.0.4 October 2nd, 2020
+
+## MISC
+* Fixed spelling in README.md (@paralax)
+* Added Community Contributors section to README.md
+
+Version 1.0.3 June 8th, 2020
+
+## MISC
+* Fixed issue #4 with Bing caused the error "Stopping. The search results count is missing."
+
+Version 1.0.2 April 20th, 2020
+
+## FIXES
+* Fixed issue #3 when using latest Wget version (v1.20), this caused the error "Stopping. The search results count is missing."
+* Fixed readline after showing banner
+
+## MISC
+* Add animated GIF of searching Bing.com to README
+
+Version 1.0.1 November 18th, 2019
+
+## FEATURES
+* Improved output for multiple targets
+* Highlight the current page in paginated search results
+
+## FIXES
+* Fully compatible with macOS
+* Improved screen output on 80x24 terminals
+* Improved progress bar animation
+* Update shield image from GPLv2 to GPLv3
+* Fixed issue with displaying banner in quiet mode
+* Fixed sorting by hostname when output with URL prefix
+
+## MISC
+* Added -V to display the version
+* Added dependency check for wget
+
+Version 1.0 November 16th, 2019
+
+⚠️ Script authors should note that the new commandline options break backward compatibility.
+
+## FEATURES
+* New progress display with more details about the scraping job.
+* Reads input targets from a file.
+* Stops after a reaching a threshold of scraped pages do not return any new results.
+* Catches CTRL-C from the commandline and displays results so far.
+* New ASCII art banner.
+* Output results to a file.
+* Support for changing the search language.
+* Support for setting a search region/market.
+* Displays URL prefixes by default.
+* Shows if some search results have been removed.
+
+## FIXES
+* New parsing of Bing.com search results.
+* Checks for and optionally creates tmp directories, fixing a known issue in earlier versions.
+* Displays URL prefixes instead of assuming http:// as in earlier versions.
+
+## MISC
+* Improved debugging output.
+* Improved commandline option arguments.
+* Improved Bash scripting style.
+* Add GPLv3 Licence file.
+
+
+Version 0.5 October 7th, 2015
+* Unofficial version by loophole / lh (lh@hhp-programming.net) 
+* Homepage: http://HAX.GS
+* Fixed misinterpreted HTML parsings that broke the script
+
+
+Version 0.4 December 19th, 2013
+* Updated usage
+* Fixed tmp file issue where files weren't being deleted
+* Resolves hostnames using nslookup instead of resolveip. Thanks Xavier Mertens
+
+
+Version 0.3 September 21st, 2012
+* Updated the progress animation with results found, and the current page being searched
+* Updated scraper to use the main bing.com site as the mobile bing site changed how it showed results
+* Updated usage info
+
+
+Version 0.2 April 2nd, 2010
+* You can enter a hostname not just an IP, eg. bing-ip2hosts foo.com
+* Uses /tmp instead of the current path for creating temporary files
+* Optional CSV output. Outputs the IP and hostname on each line, separated by a comma.
+* Optionally prefix hostnames with http:// so they can be right-clicked in the shell
+
+
+Version 0.1 December 2nd, 2009
+* Released at Kiwicon III conference in New Zealand
